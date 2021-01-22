@@ -1,12 +1,14 @@
 
-
+// https://github.com/ehalt/js-assignment
 
 
 // ----------> kilometerToMeter <-------------
 function kilometerToMeter(km){
     if(km <=0){
         return "Distance can not be negative number."
-    }else{
+    }
+
+    else{
         var m = km * 1000;
         return m;
     }
@@ -21,7 +23,9 @@ console.log(m);
 function budgetCalculator(num_of_watch, num_of_phone, num_of_lapi){
     if(num_of_watch <= 0 || num_of_phone <= 0 || num_of_phone <=0){
         return 'The number you have entered is not valid.'
-    }else{
+    }
+    
+    else{
         var price_of_watch = num_of_watch * 50;
         var price_of_phone = num_of_phone * 100;
         var price_of_lapi = num_of_lapi * 500;
@@ -40,11 +44,17 @@ function hotelCost(day){
     var total_cost ;
     if(day <= 10 && day >= 1){
         total_cost = day * 100 ;
-    }else if(day > 10 && day <= 20){
+    }
+    
+    else if(day > 10 && day <= 20){
         total_cost = day * 80 ;
-    }else if(day > 20){
+    }
+    
+    else if(day > 20){
         total_cost = day * 50 ;
-    }else{
+    }
+    
+    else{
         return 'The number you have entered is not a valid number.' ;
     }
     return total_cost ;
@@ -57,7 +67,9 @@ console.log(final_cost);
 function megaFriend(friends){
     if(friends.length == 0){
         return 'Please! do not enter an empty array.'
-    }else{
+    }
+    
+    else{
         var listOffFrineds = friends[0];
         for(var i = 0; i < friends.length; i++){
             if(friends[i].length > listOffFrineds.length){
